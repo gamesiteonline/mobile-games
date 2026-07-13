@@ -1,0 +1,88 @@
+/* Mobile Games - Modern Skeuomorphic Theme */
+
+:root {
+  /* Mobile Colors */
+  --mobile-bg: #f5f5f7;
+  --mobile-card: #ffffff;
+  --mobile-accent: #007aff;
+  --mobile-accent-light: #5ac8fa;
+  --mobile-text: #000000;
+  --mobile-text-light: #666666;
+  
+  /* Glass Morphism */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.2);
+}
+
+/* Mobile Glass Card */
+.mobile-glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  transition: all 0.3s ease;
+}
+
+.mobile-glass-card:hover {
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+/* Mobile Button */
+.btn-mobile {
+  background: linear-gradient(135deg, var(--mobile-accent) 0%, var(--mobile-accent-light) 100%);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  padding: 12px 24px;
+  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-mobile:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 6px rgba(0, 122, 255, 0.2);
+}
+
+.btn-mobile:hover {
+  box-shadow: 0 6px 16px rgba(0, 122, 255, 0.4);
+}
+
+/* Mobile Panel */
+.panel-mobile {
+  background: var(--mobile-card);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+}
+
+/* Mobile Input */
+.input-mobile {
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.input-mobile:focus {
+  outline: none;
+  border-color: var(--mobile-accent);
+  box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+}
+
+/* Mobile Badge */
+.badge-mobile {
+  background: linear-gradient(135deg, var(--mobile-accent) 0%, var(--mobile-accent-light) 100%);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-block;
+}
